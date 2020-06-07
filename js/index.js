@@ -20,4 +20,28 @@ $(document).ready(function () {
         offset: 195
     });
 
+
+    //***** Featured Dishes - Owl carousel js
+
+    $(".featured-dishes-slider").owlCarousel({
+        loop:true,
+        margin:30,
+        nav:false,
+        dots:true,
+        autoplay:true,
+        autoplayHoverPause:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            765:{
+                items:2
+            },
+            1000:{
+                items:3
+            }
+        }
+    });
+
+
 });
