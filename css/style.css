@@ -134,6 +134,7 @@ h3{
 .navbar-nav li{
     margin-left: 0.75rem;
     margin-right: 0.75rem;
+    font-size: 1.2rem;
 }
 
 .navbar-icons img{
@@ -143,7 +144,7 @@ h3{
 
 .logo {
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 2.5rem;
     padding: 0.3rem;
     letter-spacing: 3px;
     font-weight: 800;
@@ -160,6 +161,7 @@ h3{
     font-weight: 400;
 }
 
+
 .navbar-collapse li a.active{
     color: var(--highlight-color);
 }
@@ -173,7 +175,7 @@ h3{
     content: "";
     display: block;
     margin: 0 auto;
-    width: 10%;
+    width: 40%;
 }
 
 .navbar-toggler i{
@@ -191,7 +193,7 @@ h3{
 
 .sticky-navigation .logo{
     color: var(--primary-color);
-    font-size: 15px;
+    font-size: 1.5rem;
 }
 
 .sticky-navigation .navbar-collapse li a,
@@ -234,7 +236,11 @@ h3{
 
 .carousel-item{
     position: relative;
-    height: 80vh;
+    height: 60vh;
+}
+
+.carousel-indicators li.active{
+    background-color: var(--highlight-color);
 }
 
 div .overlay {
@@ -258,7 +264,9 @@ div .overlay {
 
 /*-------------      Favourite Categories Section - Start       ----------------*/
 
- .categories-img{
+ 
+
+.categories-img{
     width: 6rem;
     min-width: 50px;
     height: 6rem;
@@ -271,43 +279,51 @@ div .overlay {
     justify-content: center;
  }
 
-.wrapper {
-    position: relative;
+
+ .img-container{
+    height: 10rem;
+    width: 15rem;
 }
 
-a .overlay {
-    position: absolute;     
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
+.img1{
+    background: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3332559.jpg&w=596&h=596&c=sc&poi=face&q=85") center no-repeat;
+    background-size: 100%;
+}
+.img2{
+    background: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2258469.jpg") center no-repeat;
+    background-size: 100%;
+}
+.img3{
+    background: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https://images.media-allrecipes.com/userphotos/3349573.jpg&w=596&h=596&c=sc&poi=face&q=85") center no-repeat;
+    background-size: 100%;
+}
+.img4{
+    background: url("https://www.allwaysdelicious.com/wp-content/uploads/2020/02/af-korean-fried-chicken-square-1-735x735.jpg") center no-repeat;
+    background-size: 100%;
+}
+
+.overlay-img{
     background: var(--highlight-color);
     opacity: 0;
+    height: 100%;
+    width: 100%;
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
     cursor: crosshair;
 }
 
-
-/* how do I center the text vertically -align items doesn't work??*/
-
-.overlay .overlay-inner {
-    position: absolute;
-    top: 35%;
-    width: 100%;
-    text-align: center;
-    align-items: center;
-}
-
-.overlay h3,
-.overlay p {
-    color: var(--secondary-color);
-}
-
-a:hover .overlay {
+.category-item:hover .overlay-img{
     opacity: 1;
 }
- 
+
+.overlay-text{
+    color: var(--secondary-color);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: translate(0%, 30%);
+}
+
 /*-------------      Favourites Categories Section - End       ----------------*/
 
 
@@ -315,8 +331,8 @@ a:hover .overlay {
 
 
 .card-img{
-    background: url("/img/dummy.jpg") no-repeat;
-    background-size: cover;
+    background: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F2258469.jpg") center no-repeat;
+    background-size: 100%;
     border-radius: 0.8rem;
     width: 100%;
     height: 100%;
@@ -328,11 +344,12 @@ a:hover .overlay {
     border-radius: 0.8rem;
     text-align: center;
     max-width: 260px;
-    box-shadow: 1.5rem 0 1.5rem -0.5rem var(--highlight-color), -1.5rem 0 1.5rem -0.5rem var(--highlight-color);
+    box-shadow: 1rem 0 1rem -0.5rem var(--highlight-color), -1rem 0 1rem -0.5rem var(--highlight-color);
 }
 
 .card h3{
-    color: var(--secondary-color);
+    background-color: var(--highlight-color);
+    color: var(--primary-color);
 }
 
 .card-text{
@@ -340,13 +357,33 @@ a:hover .overlay {
 }
 
 
-.grid {
+.card-grid {
     padding: 0;
     margin: 0;
-
-    border: 2px solid black;
+    border: 2px solid transparent;
+        box-shadow: inset 0px 0px 0px 2px var(--gray-color);
+        box-sizing: border-box; /* Include padding and border in element's width and height */
 }
 
+.border-rb{
+    border-bottom: 1px dotted var(--gray-color);
+    border-right: 1px dotted var(--gray-color);
+}
+
+.border-lt{
+    border-top: 1px dotted var(--gray-color);
+    border-left: 1px dotted var(--gray-color);
+}
+
+.border-rt{
+    border-top: 1px dotted var(--gray-color);
+    border-right: 1px dotted var(--gray-color);
+}
+
+.border-lb{
+    border-bottom: 1px dotted var(--gray-color);
+    border-left: 1px dotted var(--gray-color);
+}
 
 .featured-dishes-slider .owl-nav{
     font-size: 4rem;
@@ -354,31 +391,18 @@ a:hover .overlay {
     justify-content: space-between;
 }
 
-.featured-dishes-slider .owl-nav span:hover{
-    font-size: 4rem;
-    color: var(--highlight-color);
-  
-  
-    background-color: transparent;
+.owl-nav button:focus{
+    outline: none;
 }
 
 .owl-nav button:hover{
-    background: inherit;
+    background: none !important;
+    color: var(--highlight-color)!important;
 }
 
-/*
-    .owl-theme .owl-nav [class*='owl-']:hover {
-      background: #869791;
-      color: #FFF;
-      text-decoration: none; }
-*/
-
-/* for test reasons */
-#featuredDishes{
-    background-color: red;
+.owl-nav button:active {
+    transform: scale(0.99);
 }
-
-
 
 /*-------------      Featured Dishes - End       ----------------*/
 
