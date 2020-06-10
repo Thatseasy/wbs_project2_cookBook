@@ -39,6 +39,7 @@ h5,
 h6{
     font-weight: 600;
     font-family: var(--title-font), sans-serif;
+    text-align: center;
 }
 
 p,
@@ -72,8 +73,6 @@ img {
     color: var(--primary-color);
     background: var(--secondary-color);
     transition: background .6s ease 0s;
-    max-width: 10rem;
-    max-height: 5rem;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
 }
@@ -88,32 +87,22 @@ img {
     text-transform: uppercase;
 }
 
-/*------   Section   -----*/
-
-.section-container{
-    padding: 1.5rem;
-    min-width: 100%;
-    background-color: var(--section-color);
+.highlight{
+    color: var(--highlight-color);
 }
 
-.section-title {
-    text-align: center;
-    flex-direction: column; 
-    align-items: center;
-    padding-bottom: 2rem;
-}
-
-.section-title h2 {
+h2 {
     font-size: 1.5rem;
-    color: var(--primary-color);
     letter-spacing: 1px;
-    font-weight: 400;
     text-transform: uppercase;
 }
 
-.section-title span{
-    color: var(--highlight-color);
-}
+h3{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: 0.5rem;
+ }
+
 
 .header-bar{
     background-color: var(--primary-color); 
@@ -122,12 +111,7 @@ img {
 }
 
 
-h3{
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.2rem;
-    padding: 0.5rem;
- }
+
 
 /*-------------      2. Default Section - End       ----------------*/
 
@@ -147,15 +131,14 @@ h3{
     height: 4.5rem;
 }
 
-.navbar-nav{
-    margin-left: auto;
-    text-align: center; /*mobile*/
+.navbar-nav li{
+    margin-left: 0.75rem;
+    margin-right: 0.75rem;
 }
 
-.navbar-nav li{
-    margin: 9px 0; /*mobile*/
-    /*margin-left: 0.75rem;
-    margin-right: 0.75rem;     screen*/
+.navbar-icons img{
+    width: 25%;
+    padding: 0 0.25rem;
 }
 
 .logo {
@@ -169,18 +152,6 @@ h3{
 
 .logo span {
     color: var(--highlight-color);
-}
-
-.navbar-collapse {
-    margin: 1rem auto;
-    height: 80vh;
-    max-height: 100%;
-    max-width: 80vw;
-    background-color: rgba(0, 0, 0, 0.9);
-}
-
-.navbar-collapse div{
-    display: none;
 }
 
 .navbar-collapse li a{
@@ -215,8 +186,7 @@ h3{
     background: var(--secondary-color);
     box-shadow: 0px 10px 20px rgba(57, 56, 61, 0.205);
     transition: all 0.4s ease-out;
-    height: 4rem;
-    /*height: 5rem;   screeen*/ 
+    height: 5rem;
 }
 
 .sticky-navigation .logo{
@@ -227,12 +197,12 @@ h3{
 .sticky-navigation .navbar-collapse li a,
 .sticky-navigation .navbar-collapse li a:hover
 .sticky-navigation .navbar-collapse li a.active {
-    color: var(--secondary-color);
+    color: var(--primary-color);
 }
 
 .sticky-navigation .navbar-collapse li a:hover::after
 .sticky-navigation .navbar-collapse li a.active::after{
-    border-bottom: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--primary-color);
     width: 10%;
     content: "";
     display: block;
@@ -262,18 +232,25 @@ h3{
 /*-------------      4. Hero Section - Start       ----------------*/
 
 
-.hero-section{
-    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) ), url("../img/dummy.jpg") center no-repeat;
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-attachment: fixed;
-    color: var(--primary-color);;
-    text-align: center;
+.carousel-item{
     position: relative;
-    z-index: 1;
+    height: 80vh;
+}
+
+div .overlay {
+    position: absolute;     
+    top: 0px;
+    left: 0px;
     width: 100%;
-    height: 90vh;
-   
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7) );
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.hero-img{
+    width: 100%;
+    height: 100%;
 }
 
 /*-------------      Hero Section - End       ----------------*/ 
@@ -281,41 +258,29 @@ h3{
 
 /*-------------      Favourite Categories Section - Start       ----------------*/
 
-.categories-container{
-    justify-content: space-around;
-    margin-bottom: 2rem;
- }
- 
- .categories-item {
-    padding: 1rem;
- }
- 
  .categories-img{
-    width: 4rem;
-    height: 4rem;
-    border-radius: 3rem;
-    margin: 0 auto;
+    width: 6rem;
+    min-width: 50px;
+    height: 6rem;
+    min-height: 50px;
+    border-radius: 100%;
+
+
     display: flex;
     align-items: center;
     justify-content: center;
  }
- 
- .label{
-    margin-top: 1rem;
- }
 
-
-/*is it really needed?? */
 .wrapper {
     position: relative;
 }
 
-.overlay {
+a .overlay {
     position: absolute;     
     top: 0px;
     left: 0px;
-    bottom: 0px;
-    right: 0px;
+    width: 100%;
+    height: 100%;
     background: var(--highlight-color);
     opacity: 0;
     -webkit-transition: all .5s ease;
@@ -325,6 +290,7 @@ h3{
 
 
 /* how do I center the text vertically -align items doesn't work??*/
+
 .overlay .overlay-inner {
     position: absolute;
     top: 35%;
@@ -333,9 +299,9 @@ h3{
     align-items: center;
 }
 
-.overlay-inner h3,
-.overlay-inner p {
-    color: var(--secondary-color);  
+.overlay h3,
+.overlay p {
+    color: var(--secondary-color);
 }
 
 a:hover .overlay {
@@ -348,26 +314,22 @@ a:hover .overlay {
 /*-------------      Featured Dishes - Start       ----------------*/
 
 
-.featured-dishes-card {
+.card-img{
+    background: url("/img/dummy.jpg") no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    min-height: 150px;
+}
+
+.card {
     color: var(--primary-color);
     border-radius: 10px;
     text-align: center;
-    
-    border: 2px solid green;
+    max-width: 260px;
+    box-shadow: 12px 0 15px -4px var(--highlight-color), -12px 0 8px -4px var(--highlight-color);
 }
 
-.featured-dishes-card-img {
-    min-height: 200px;
-    width: 100%;
-    height: 100%;
-    background: url("/img/dummy.jpg") no-repeat;
-    background-size: cover;
-}
-
-.featured-dishes-card-img h3{
-    color: var(--secondary-color);
-    
-}
 
 .featured-dishes-card-body{
     padding: 1rem;
@@ -379,33 +341,17 @@ a:hover .overlay {
     border: 2px solid black;
 }
 
-.owl-dots{
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.owl-dot {
-    display: inline-block;
-    height: 0.7rem !important;
-    width: 0.7rem !important;
-    background-color: var(--secondary-color) !important;
-    opacity: 0.8;
-    border-radius: 50%;
-    margin: 0 0.3rem;
-}
-
-.owl-dot.active {
-    background-color: var(--highlight-color) !important;
-}
-
-
 /* for test reasons */
-i{
+#featuredDishes{
     background-color: red;
-    z-index: 10;
-    font-size: 25px;
-    border: none;
 }
+
+.test{
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+}
+
 
 
 /*-------------      Featured Dishes - End       ----------------*/
@@ -416,7 +362,7 @@ i{
 
 .left-contact{
     margin: 2rem 0;
-    display: flex;
+    
     justify-content: center;
 }
 
@@ -468,14 +414,7 @@ textarea.form-control{
 
 .footer-section{
     background-color: var(--highlight-color);
-    width: 100%;
     height: 10vh;                                     
-    justify-content: center;
-    align-items: center;
-}
-
-.footer-section p{
-    margin: 0;
 }
 
 
@@ -500,7 +439,25 @@ textarea.form-control{
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) {
     
+    .navbar-collapse {
+        margin: 1rem auto;
+        height: 80vh;
+        max-height: 100%;
+        max-width: 80vw;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+
+    .navbar-icons{
+        display: none;
+    }
     
+    .navbar-nav li{
+        margin: 9px 0;
+    }
+
+    .navbar.sticky-navigation{
+        height: 4rem;
+    }
 
 } 
 

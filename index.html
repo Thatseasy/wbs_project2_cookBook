@@ -18,6 +18,9 @@
     <link rel="stylesheet" href="./css/owl.carousel.css">
     <link rel="stylesheet" href="./css/owl.theme.default.css">
 
+    <!--hover.css Effects--> 
+    <link href="css/hover.css" rel="stylesheet" media="all">
+
 
     <!--  custom css file  -->
     <link rel="stylesheet" href="./css/style.css">
@@ -34,19 +37,19 @@
         <nav class="navbar fixed-top navbar-expand-md">
             <div class="container navbar-container"> 
         
-                    <a href="index.html" class="navbar-brand"><span class="logo">Cook<span>Book</span></span></a>
+                    <a href="index.html" class="navbar-brand"><span class="logo">Cook<span class="highlight">Book</span></span></a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsible-navmenu"> 
                         <i class="fa fa-bars"></i>
                     </button>
         
                 <div id="collapsible-navmenu" class="collapse navbar-collapse">
         
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto text-center">
                         <li class="nav-item"><a class="nav-link" href="#recipes">recipes</a></li>
                         <li class="nav-item"><a class="nav-link" href="#about">about</a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">contact</a></li>
                     </ul>
-                    <div>
+                    <div class="navbar-icons">
                         <img src="./img/icons/rs1.png">
                         <img src="./img/icons/rs2.png">
                         <img src="./img/icons/rs3.png">
@@ -63,50 +66,107 @@
 
 
     <!-------------      Hero Section - Start       ---------------->
-    <section id="home" class="hero-section container-fluid">
-            
+    <section id="home" class="container-fluid mb-4">
+
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-intervall="3000" data-pause="hover">
+            <ol class="carousel-indicators">
+              <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+              <li data-target="#myCarousel" data-slide-to="1" class=""></li>
+              <li data-target="#myCarousel" data-slide-to="2" class=""></li>
+            </ol>
+
+            <div class="carousel-inner">
+
+              <div class="carousel-item active">
+                <img class="first-slide hero-img" src="./img/dummy.jpg" alt="First slide">
+                <div class="overlay"></div>
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h1>Example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn primary-button" href="#" role="button">Sign up today</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img class="second-slide hero-img" src="./img/favouriteCategories_Asia.jpg" alt="Second slide">
+                <div class="overlay"></div>
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h1>Another example headline.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn primary-button" href="#" role="button">Summer Recipes</a></p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-item">
+                <img class="third-slide hero-img" src="./img/dummy.jpg" alt="Third slide">
+                <div class="overlay"></div>
+                <div class="container">
+                  <div class="carousel-caption text-center">
+                    <h1>One more for good measure.</h1>
+                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                    <p><a class="btn primary-button" href="#" role="button">Browse gallery</a></p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
     </section> 
     
     <!-------------      Hero Section - End       ---------------->
 
     <!-------------      Favourite Categories Section - Start       ---------------->
-    <section class="section-container container">
-
-        <div class="row section-title">
-            <h2>favourite <span>categories</span></h2>
-            <div class="header-bar"></div>
+    <section class="container py-4">
+        <div class="mx-auto my-auto">
+            <h2>favourite <span class="highlight">categories</span></h2>
         </div>
+        <div class="mx-auto my-auto header-bar"></div>
 
-        <div class="row categories-container">
+        <div class="row container py-4 m-0 justify-content-center">
 
-            <div class="col categories-item">
-                <img class="categories-img" src="./img/favouriteCategories_Asia.jpg">
-                <h3 class="label">Asian</h3>
+            <div class="col-sm-6 col-md-3 p-1">
+                <img class="categories-img mx-auto" src="./img/favouriteCategories_Asia.jpg">
+                <h3 class="label mt-2">Asian</h3>
             </div>
 
-            <div class="col categories-item">
-                <img class="categories-img" src="./img/favouriteCategories_Asia.jpg">
-                <h3 class="label">Asian</h3>
+            <div class="col-sm-6 col-md-3 p-1">
+                <img class="categories-img mx-auto" src="./img/favouriteCategories_Asia.jpg">
+                <h3 class="label mt-2">Asian</h3>
             </div>
 
-            <div class="col categories-item">
-                <img class="categories-img" src="./img/favouriteCategories_Asia.jpg">
-                <h3 class="label">Asian</h3>
+            <div class="col-sm-6 col-md-3 p-1">
+                <img class="categories-img mx-auto" src="./img/favouriteCategories_Asia.jpg">
+                <h3 class="label mt-2">Asian</h3>
             </div>
 
-            <div class="col categories-item">
-                <img class="categories-img" src="./img/favouriteCategories_Asia.jpg">
-                <h3 class="label">Asian</h3>
+            <div class="col-sm-6 col-md-3 p-1">
+                <img class="categories-img mx-auto" src="./img/favouriteCategories_Asia.jpg">
+                <h3 class="label mt-2">Asian</h3>
+            </div>
+
+            <div class="col-sm-6 col-md-3 p-1">
+                <img class="categories-img mx-auto" src="./img/favouriteCategories_Asia.jpg">
+                <h3 class="label mt-2">Asian</h3>
+            </div>
+
+            <div class="col-sm-6 col-md-3 p-1">
+                <img class="categories-img mx-auto" src="./img/favouriteCategories_Asia.jpg">
+                <h3 class="label mt-2">Asian</h3>
             </div>
             
         </div>
 
 
-        <div class="row categories-container">
+        <div class="row container py-4 m-0">
 
-            <div class="col-md-3 col-sm-6 col-xs-12 categories-item">
+            <div class="col-md-4 col-sm-6 col-xs-12 p-3">
                 <div class="wrapper">
-                    <a href="#recipes" class="zoom1"> 
+                    <a href="#recipes" class="hvr-grow"> 
                         <img src="./img/dummy.jpg" alt="recipe-image" class="img-fluid">
                         <div class="overlay">
                             <div class="overlay-inner">
@@ -118,9 +178,9 @@
                 </div> 
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12 categories-item">
+            <div class="col-md-4 col-sm-6 col-xs-12 p-3">
                 <div class="wrapper">
-                    <a href="#recipes" class="zoom1"> 
+                    <a href="#recipes" class="hvr-grow"> 
                         <img src="./img/dummy.jpg" alt="recipe-image" class="img-fluid">
                         <div class="overlay">
                             <div class="overlay-inner">
@@ -132,9 +192,9 @@
                 </div> 
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12 categories-item">
+            <div class="col-md-4 col-sm-6 col-xs-12 p-3">
                 <div class="wrapper">
-                    <a href="#recipes" class="zoom1"> 
+                    <a href="#recipes" class="hvr-grow"> 
                         <img src="./img/dummy.jpg" alt="recipe-image" class="img-fluid">
                         <div class="overlay">
                             <div class="overlay-inner">
@@ -146,9 +206,9 @@
                 </div> 
             </div>
 
-            <div class="col-md-3 col-sm-6 col-xs-12 categories-item">
+            <div class="col-md-4 col-sm-6 col-xs-12 p-3">
                 <div class="wrapper">
-                    <a href="#recipes" class="zoom1"> 
+                    <a href="#recipes" class="hvr-grow"> 
                         <img src="./img/dummy.jpg" alt="recipe-image" class="img-fluid">
                         <div class="overlay">
                             <div class="overlay-inner">
@@ -159,12 +219,6 @@
                     </a>
                 </div> 
             </div>
-
-
-
-            
-
-
 
         </div>
             
@@ -174,107 +228,258 @@
 
 
     <!-------------      Featured Dishes Section - Start       ---------------->
-    <section id="featuredDishes" class="section-container container">
+    <section id="featuredDishes" class="container py-4">
 
-        <div class="row section-title">
-            <h2>featured <span>dishes</span></h2>
-            <div class="header-bar"></div>
+        <div class="mx-auto my-auto">
+            <h2>featured <span class="highlight">dishes</span></h2>
         </div>
+        <div class="mx-auto my-auto header-bar"></div>
 
+                
         <div class="row">
 
-            <div class="col-md-12">
-                <!-- 
-                <div id="featuredDishesCarousel" class="featured-dishes-slider owl-carousel">-->
+            <div class="col">
+                <div class="featured-dishes-slider owl-carousel owl-theme">
+
 
                     <a title="BBQ Prawns with Roast Chilli Salsa" class="card-link" href="#" target="_self">
-                        <div class="featured-dishes-card">
-                            <div class="row no-gutters">
-                                <div class="col-sm-5 featured-dishes-card-img">
-                                    <h3 class="card-title">Wok Noodles</h3>
-                                </div>
-                                <div class="col-sm-4 offset-sm-1 px-4">
-                                    <div class="featured-dishes-card-body">
-                                        <div class="row"> 
-                                            <div class="col-6 grid">
-                                                <p><b>Cook Time</b></p>
-                                                <p>5min.</p>
-                                            </div>
-                                            <div class="col-6 grid">
-                                                <p><b>Cook Time</b></p>
-                                                <p>5min.</p>
-                                            </div>
-                                        </div>
-                                        <div class="row"> 
-                                            <div class="col-6 grid">
-                                                <p><b>Cook Time</b></p>
-                                                <p>5min.</p>
-                                            </div>
-                                            <div class="col-6 grid">
-                                                <p><b>Cook Time</b></p>
-                                                <p>5min.</p>
-                                            </div>
-                                        </div>
-                                        <a href="#" class="btn primary-button stretched-link">See recipe</a>
+                        <div class="card m-4">
+                            <div class="card-img-top d-flex card-img align-items-end">
+                                <h3>Recipe 1</h3>
+                            </div>
+                            <div class="card-body py-0">
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </a>
-                    
-                    <!-- 
-<div class="featured-dishes-card">
-                            <div class="featured-dishes-card-body">
-                                <h3>BBQ Prawns with Roast Chilli Salsa</h3>
-                                    <div class="featured-dishes-card-content">
-                                        <div class="featured-dishes-card-item">
-                                            <div class="featured-dishes-card-label">Prep Time</div>                                          
-                                            <div class="featured-dishes-card-text"><em>-</em></div>
-                                        </div>
-                                        <div class="featured-dishes-card-item">
-                                            <div class="featured-dishes-card-label">Cook Time</div>                                          
-                                            <div class="featured-dishes-card-text"><em>-</em></div>
-                                        </div>
-                                        <div class="featured-dishes-card-item">
-                                            <div class="featured-dishes-card-label">Serves</div>                                             
-                                            <div class="featured-dishes-card-text">4</div>
-                                        </div>
-                                        <div class="featured-dishes-card-item">
-                                             <div class="featured-dishes-card-label">Difficulty</div>                                         
-                                                <div class="featured-dishes-card-text">Easy</div>
-                                            
-                                        </div>
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
                                     </div>
-                                
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn primary-button stretched-link my-2">See recipe</a>
                             </div>
+                        
                         </div>
+                    </a> 
+
+
+                    <a title="BBQ Prawns with Roast Chilli Salsa" class="card-link" href="#" target="_self">
+                        <div class="card m-4">
+                            <div class="card-img-top d-flex card-img align-items-end">
+                                <h3>Recipe 2</h3>
+                            </div>
+                            <div class="card-body py-0">
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn primary-button stretched-link my-2">See recipe</a>
+                            </div>
                         
-                    -->
-                    
-                    
+                        </div>
+                    </a> 
 
-                    
-
-                    
-
-                 <!--   Controls on the side
-                    <a class="carousel-control-prev" href="#featuredDishesCarousel" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"></i>
+                    <a title="BBQ Prawns with Roast Chilli Salsa" class="card-link" href="#" target="_self">
+                        <div class="card m-4">
+                            <div class="card-img-top d-flex card-img align-items-end">
+                                <h3>Recipe 3</h3>
+                            </div>
+                            <div class="card-body py-0">
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn primary-button stretched-link my-2">See recipe</a>
+                            </div>
                         
-                    </a>
-                    <a class="carousel-control-next" href="#featuredDishesCarousel" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"></i>
-                        
-                    </a>
+                        </div>
+                    </a> 
 
-                     
-                    
-                </div> -->
+                    <a title="BBQ Prawns with Roast Chilli Salsa" class="card-link" href="#" target="_self">
+                        <div class="card m-4">
+                            <div class="card-img-top d-flex card-img align-items-end">
+                                <h3>Recipe 4</h3>
+                            </div>
+                            <div class="card-body py-0">
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn primary-button stretched-link my-2">See recipe</a>
+                            </div>
+                        
+                        </div>
+                    </a> 
+
+                    <a title="BBQ Prawns with Roast Chilli Salsa" class="card-link" href="#" target="_self">
+                        <div class="card m-4">
+                            <div class="card-img-top d-flex card-img align-items-end">
+                                <h3>Recipe 5</h3>
+                            </div>
+                            <div class="card-body py-0">
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn primary-button stretched-link my-2">See recipe</a>
+                            </div>
+                        
+                        </div>
+                    </a> 
+
+                    <a title="BBQ Prawns with Roast Chilli Salsa" class="card-link" href="#" target="_self">
+                        <div class="card m-4">
+                            <div class="card-img-top d-flex card-img align-items-end">
+                                <h3>Recipe 6</h3>
+                            </div>
+                            <div class="card-body py-0">
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <div class="row"> 
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                    <div class="col-6 grid">
+                                        <p class="card-text m-0"><b>Cook Time</b></p>
+                                        <p class="card-text m-0">5min.</p>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn primary-button stretched-link my-2">See recipe</a>
+                            </div>
+                        
+                        </div>
+                    </a> 
+
+
+
+                </div>
             </div>
 
         </div>
-            
+
+
+
+
     </section>
+
+
+    
+                        <a title="BBQ Prawns with Roast Chilli Salsa" class="card-link" href="#" target="_self">
+                            <div class="card m-4">
+                                <div class="card-img-top d-flex card-img align-items-end">
+                                    <h3>Wok Noodles</h3>
+                                </div>
+                                <div class="card-body py-0">
+                                    <div class="row"> 
+                                        <div class="col-6 grid">
+                                            <p class="card-text m-0"><b>Cook Time</b></p>
+                                            <p class="card-text m-0">5min.</p>
+                                        </div>
+                                        <div class="col-6 grid">
+                                            <p class="card-text m-0"><b>Cook Time</b></p>
+                                            <p class="card-text m-0">5min.</p>
+                                        </div>
+                                    </div>
+                                    <div class="row"> 
+                                        <div class="col-6 grid">
+                                            <p class="card-text m-0"><b>Cook Time</b></p>
+                                            <p class="card-text m-0">5min.</p>
+                                        </div>
+                                        <div class="col-6 grid">
+                                            <p class="card-text m-0"><b>Cook Time</b></p>
+                                            <p class="card-text m-0">5min.</p>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="btn primary-button stretched-link my-2">See recipe</a>
+                                </div>
+                            
+                            </div>
+                        </a> 
 
     <!-------------      Featured Dishes Section - End       ---------------->
 
@@ -282,72 +487,75 @@
 
     <!-------------      Contact Section - Start       ---------------->
     
-    <section id="contact" class="contact-section section-container container">
+    <section id="contact" class="container py-4">
 
-        <div class="row section-title">
-            <h2>contact <span>us</span></h2>
-            <div class="header-bar"></div>
+        <div class="mx-auto my-auto">
+            <h2>contact <span class="highlight">us</span></h2>
         </div>
+        <div class="mx-auto my-auto header-bar"></div>
 
-        <div class="row justify-content-between">
+        <div class="container py-4">
+            <div class="row justify-content-between">
+                <div class="col-xs-12 col-sm-12 col-md-4">
 
-            <div class="col-xs-12 col-sm-12 col-md-4">
-                <div class="left-contact">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="uppercase"><b>Address / Street</b></p>
-                            <p>No 123, Westwood Lane, USA</p> 
+                    <div class="left-contact">
+                        <div class="row">
+                            <div class="col-6">
+                                <i class="fa fa-map"></i>
+                                <p class="uppercase"><b>Address / Street</b></p>
+                                <p>No 123, Westwood Lane, USA</p> 
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <i class="fa fa-map"></i>
+                                <p class="uppercase"><b>Address / Street</b></p>
+                                <p>No 123, Westwood Lane, USA</p> 
+                            </div> 
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="uppercase"><b>Address / Street</b></p>
-                            <p>No 123, Westwood Lane, USA</p> 
-                        </div> 
-                    </div>
+
+                </div>
+    
+                <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 box-contact-form">
+    
+                    <form id="contact-form" method="post"> 
+    
+                        <div class="controls">
+    
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required="required" data-error="Fullname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="3" required="required" data-error="Leave a message for me"></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <button class="btn primary-button" value="">Send message</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </form>
+    
                 </div>
             </div>
-
-
-            <div class="col-xs-12 col-sm-12 col-md-8 col-lg-7 box-contact-form">
-
-                <form id="contact-form" method="post"> 
-
-                    <div class="controls">
-
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input id="form_name" type="text" name="name" class="form-control" placeholder="Enter your full name *" required="required" data-error="Fullname is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Enter your email *" required="required" data-error="Valid email is required.">
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="form-group">
-                                    <textarea id="form_message" name="message" class="form-control" placeholder="Your Message *" rows="3" required="required" data-error="Leave a message for me"></textarea>
-                                    <div class="help-block with-errors"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-12">
-                                <button class="btn primary-button" value="">Send message</button>
-                            </div>
-                        </div>
-                    </div>
-
-                </form>
-
-            </div>
-
         </div>
     </section>
     
@@ -358,8 +566,8 @@
 
     <!-------------      Footer Section - Start       ---------------->
 
-    <footer class="row footer-section container-fluid">
-            <p class="copyright">&copy;2020 All Right Reserved By XY</p>
+    <footer class="row container-fluid mt-4 footer-section">
+            <p class="my-auto mx-auto">&copy;2020 All Right Reserved By XY</p>
       </footer>
 
     <!-------------      Footer Section - End       ---------------->
