@@ -26,8 +26,8 @@ $(document).ready(function () {
     $(".featured-dishes-slider").owlCarousel({
         loop:true,
         margin:30,
-        nav:false,
-        dots:true,
+        nav:true,
+        dots:false,
         autoplay:true,
         autoplayHoverPause:true,
         responsive:{

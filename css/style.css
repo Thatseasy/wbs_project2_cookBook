@@ -317,6 +317,7 @@ a:hover .overlay {
 .card-img{
     background: url("/img/dummy.jpg") no-repeat;
     background-size: cover;
+    border-radius: 0.8rem;
     width: 100%;
     height: 100%;
     min-height: 150px;
@@ -324,32 +325,57 @@ a:hover .overlay {
 
 .card {
     color: var(--primary-color);
-    border-radius: 10px;
+    border-radius: 0.8rem;
     text-align: center;
     max-width: 260px;
-    box-shadow: 12px 0 15px -4px var(--highlight-color), -12px 0 8px -4px var(--highlight-color);
+    box-shadow: 1.5rem 0 1.5rem -0.5rem var(--highlight-color), -1.5rem 0 1.5rem -0.5rem var(--highlight-color);
 }
 
-
-.featured-dishes-card-body{
-    padding: 1rem;
+.card h3{
+    color: var(--secondary-color);
 }
+
+.card-text{
+    color: var(--primary-color);
+}
+
 
 .grid {
     padding: 0;
     margin: 0;
+
     border: 2px solid black;
 }
+
+
+.featured-dishes-slider .owl-nav{
+    font-size: 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.featured-dishes-slider .owl-nav span:hover{
+    font-size: 4rem;
+    color: var(--highlight-color);
+  
+  
+    background-color: transparent;
+}
+
+.owl-nav button:hover{
+    background: inherit;
+}
+
+/*
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; }
+*/
 
 /* for test reasons */
 #featuredDishes{
     background-color: red;
-}
-
-.test{
-    height: 100px;
-    width: 100%;
-    background-color: blue;
 }
 
 
@@ -361,27 +387,20 @@ a:hover .overlay {
 /*-------------      Contact Section - Start       ----------------*/
 
 .left-contact{
-    margin: 2rem 0;
-    
+    height: 100%;
     justify-content: center;
+    margin-right: 3rem;
 }
 
-.left-contact-text {
+/*.left-contact-text {
     padding: 0 3rem;
     margin-bottom: 1.3rem;
-}
+}*/
 
-.left-contact-text h2{
-    margin-top: 2px;
-    margin-bottom: 5px;
-    
-    font-weight: 600;
-    font-size: 0.9rem;
-    letter-spacing: 3px;
-}
-
-.left-contact-text p{
-    color: var(--gray-color);
+.left-contact p,
+.left-contact i{
+    margin: 0;
+    padding: 0.2rem;
 }
 
 #contact-form {
@@ -457,6 +476,12 @@ textarea.form-control{
 
     .navbar.sticky-navigation{
         height: 4rem;
+    }
+
+
+    .left-contact{
+        padding-bottom: 2rem;
+        margin-right: 0;
     }
 
 } 
