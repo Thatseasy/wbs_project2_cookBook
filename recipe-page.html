@@ -36,11 +36,11 @@
         
                 <div id="collapsible-navmenu" class="collapse navbar-collapse">
         
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav ml-auto text-center">
                         <li class="nav-item"><a class="nav-link" href="#">recipes</a></li>
                         <li class="nav-item"><a class="nav-link" href="./category-page.html">category</a></li>
                     </ul>
-                    <div>
+                    <div class="navbar-icons">
                         <img src="./img/icons/rs1.png">
                         <img src="./img/icons/rs2.png">
                         <img src="./img/icons/rs3.png">
@@ -112,26 +112,9 @@
             <h2>sweet sour <span class="highlight">& chili chicken</span></h2>
         </div>
         <div class="mx-auto my-auto header-bar"></div>
-    </section>
+    
 
-  </body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Static Template</title>
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container">
+    <div class="container py-5">
       <div class="row">
         <div class="col-4 bg-light">
           INGREDIENTS
@@ -180,16 +163,15 @@
           </ul>
         </div>
       </div>
+      <div class="row mx-auto pt-3">
+        <button id="share" type="button" onclick="getURL();" class="btn primary-button btn-lg  mx-auto">Share</button>
+      </div>
+      <!-----    task 4: popup alert      ---->
+      
     </div>
+    </div>
+  </section>
 
-    <section id="contact" class="container py-4 text-center">
-
-        <!-----    task 4: popup alert      ---->
-        <button id="share" type="button" onclick="getURL();" class="btn primary-button btn-lg">Share</button>
-        </div>
-
-
-    </section>
 
     <!--  jquery & Bootstrap js file -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
