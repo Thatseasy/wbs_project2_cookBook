@@ -1,0 +1,198 @@
+
+.grid-container {
+    display: grid;
+    height: 4000px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0fr 9fr 2.8fr 2.8fr 1.95fr 5.2fr 1.35fr 0.7fr 2.1fr 2.1fr;
+    gap: 1px 1px;
+    grid-template-areas: "NavBar NavBar NavBar NavBar NavBar NavBar NavBar NavBar" "HEADER HEADER HEADER HEADER HEADER HEADER HEADER HEADER" "recipe-a recipe-a recipe-b recipe-b recipe-c recipe-c recipe-d recipe-d" "recipe-e recipe-e recipe-f recipe-f recipe-g recipe-g recipe-h recipe-h" "socialheader socialheader socialheader socialheader socialheader socialheader socialheader socialheader" "socialmedia socialmedia socialmedia socialmedia socialmedia socialmedia socialmedia socialmedia" "share share share share share share share share" "footer footer footer footer footer footer footer footer" "lowbar lowbar lowbar lowbar lowbar lowbar lowbar lowbar" "lowbar lowbar lowbar lowbar lowbar lowbar lowbar lowbar";
+  }
+  
+  .NavBar {
+    grid-area: NavBar;
+    background-color: lightblue;
+    width: 1920px;
+  }
+  
+  .HEADER {
+    grid-area: HEADER;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-content: space-around;
+    background-color: lightcoral;
+    background: url("https://i.ibb.co/vhJNmrd/cherrybanner.png") no-repeat;
+    background-size: 100%;
+  }
+  
+  .HEADER p, h1 {
+    max-width: 40ch;
+    margin: 30px auto;
+  
+  }
+  
+  
+  .recipe-a {
+    grid-area: recipe-a;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+   
+  
+  }
+  
+  .recipe-b {
+    grid-area: recipe-b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around center;
+   text-align: center;
+    align-items: center;
+    margin: auto;
+  }
+  
+  .recipe-c {
+    grid-area: recipe-c;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .recipe-d {
+    grid-area: recipe-d;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .recipe-e {
+    grid-area: recipe-e;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .recipe-f {
+    grid-area: recipe-f;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .recipe-g {
+    grid-area: recipe-g;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .recipe-h {
+    grid-area: recipe-h;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .socialheader {
+    display: flex;
+    background-color: lightcyan;
+    grid-area: socialheader;
+    text-align: center;
+    flex-direction: column;
+    
+  }
+  
+  .tex {
+  margin: auto;
+  justify-content: space-between;
+  
+  }
+  
+  .box {
+    background-color: lightcoral
+  display: flex;
+  align-content: space-between;
+  flex-direction: column;
+  
+  }
+  
+  
+  .socialmedia {
+    grid-area: socialmedia;
+    background-color: lightsalmon;
+  }
+  
+  .share {
+    grid-area: share;
+    background-color: lightcyan;
+  }
+  
+  .footer {
+    grid-area: footer;
+    background-color: lightsalmon;
+  }
+  
+  .lowbar {
+    grid-area: lowbar;
+    background-color: lightcyan;
+  }
+  
+  .recipe-img {
+    width: 150px;
+    height: 150px;
+  }
+  
+  hr { 
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 35%;
+    margin-right: 35%;
+    border-style: inset;
+    border-width: 1px;
+  } 
+  
+  .card {
+    max-width: 400px;
+    margin: 100px 0;
+    background: url("https://www.wallpapers4u.org/wp-content/uploads/paper_crumpled_light_shadow_35117_1920x1080.jpg");
+    background-size: 100%;
+    border-radius: 3em;
+  
+  }
+  
+  .card-img-top {
+    border-top-left-radius: 3em;
+    border-top-right-radius: 3em;
+  }
+  
+  .card-title {
+    background-color: lightblue;
+    
+    border-top-right-radius: 50%;
+    background-size: 100%;
+    text-transform: uppercase;
+    margin: auto;
+    color: white
+  }
+  
+  .card-text {
+    background: white;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 0%;
+  color: lightblue;
+  font-weight: 700;
+  
+  
+  }
+  
+  .recipe-a, .recipe-b, .recipe-c, .recipe-d, .recipe-e, .recipe-f, .recipe-g, .recipe-h { margin: auto}

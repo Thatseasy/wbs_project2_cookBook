@@ -44,7 +44,11 @@ $(document).ready(function () {
     });
 
 
-
+    /*    task 4: popup alert      */
+    let share = document.getElementById("share");
+    share.onclick = function getURL() {
+        alert("The current URL of this page is:" + window.location.href);
+    }
 
 
 });

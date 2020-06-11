@@ -137,6 +137,7 @@ h3{
     font-size: 1.2rem;
 }
 
+
 .navbar-icons img{
     width: 25%;
     padding: 0 0.25rem;
@@ -160,7 +161,6 @@ h3{
     text-transform: uppercase;
     font-weight: 400;
 }
-
 
 .navbar-collapse li a.active{
     color: var(--highlight-color);
@@ -265,25 +265,34 @@ div .overlay {
 /*-------------      Favourite Categories Section - Start       ----------------*/
 
  
+.category-item{
+    width: 100%;
+}
+
 
 .categories-img{
-    width: 6rem;
-    min-width: 50px;
-    height: 6rem;
-    min-height: 50px;
+    width: 100%;
+    height: 100%;
+    min-height: 4rem;
+    min-width: 4rem;
     border-radius: 100%;
+ }
 
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
+ .label{
+    padding: 1rem 0 0 0;
  }
 
 
- .img-container{
-    height: 10rem;
-    width: 15rem;
-}
+ .category-item a{
+    width: 100%;
+    height: 100%;
+ }
+
+ .overlay-img{
+    min-height: 10rem;
+ }
+
+
 
 .img1{
     background: url("https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimages.media-allrecipes.com%2Fuserphotos%2F3332559.jpg&w=596&h=596&c=sc&poi=face&q=85") center no-repeat;
@@ -500,6 +509,27 @@ textarea.form-control{
 
     .navbar.sticky-navigation{
         height: 4rem;
+    }
+
+    .navbar.sticky-navigation a{
+        color: var(--secondary-color) !important;
+    }
+
+    .navbar.sticky-navigation a:hover{
+        color: var(--highlight-color) !important;
+    }
+
+
+    span.logo{
+        font-size: 1.5rem; 
+    }
+
+    .label{
+        font-size: 0.9rem;
+    }
+
+    .overlay-img{
+        min-height: 13rem;
     }
 
 
