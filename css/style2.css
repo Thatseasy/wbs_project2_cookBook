@@ -48,10 +48,15 @@
     }
   }
 
+.blossom {
+  background: url("https://i.ibb.co/vhJNmrd/cherrybanner.png");
+  background-size: 100%;
+}
 
 .rec {
 padding-top: 50px;
 padding-bottom: 50px;
+
 }
 
 .makesure {
